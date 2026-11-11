@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jishitha | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Jishitha<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="themeToggle" class="theme-btn">☀</button>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="intro-text">HELLO, I'M</p>
+
+                <h1>Jishitha</h1>
+
+                <h2>Data Science Student & Aspiring Developer</h2>
+
+                <p>
+                    I am passionate about technology, creativity and
+                    building meaningful digital experiences.
+                    I enjoy learning new technologies and turning
+                    ideas into reality.
+                </p>
+
+                <a href="#projects" class="primary-btn">View My Work</a>
+
+                <a href="#contact" class="secondary-btn">Contact Me</a>
+
+            </div>
+
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    J
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="section">
+
+            <p class="section-label">GET TO KNOW ME</p>
+
+            <h2>About Me</h2>
+
+            <p>
+                I am a second-year B.Tech Data Science student at
+                Malla Reddy College with a CGPA of 8.5.
+
+                I have an interest in programming, web development
+                and emerging technologies.
+
+                I enjoy exploring creative ideas, developing projects
+                and continuously improving my technical skills.
+            </p>
+
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+
+            <p class="section-label">WHAT I KNOW</p>
+
+            <h2>My Skills</h2>
+
+            <div class="skills-container">
+
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">React</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">C Programming</div>
+                <div class="skill-card">Java</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+
+            <p class="section-label">MY ACADEMIC JOURNEY</p>
+
+            <h2>Education</h2>
+
+            <div class="education-card">
+
+                <h3>Bachelor of Technology – Data Science</h3>
+
+                <p>Malla Reddy College</p>
+
+                <p>Second Year</p>
+
+                <p>CGPA: 8.5</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+
+            <p class="section-label">MY RECENT WORK</p>
+
+            <h2>My Projects</h2>
+
+            <div class="projects-container">
+
+                <div class="project-card">
+
+                    <h3>Career Guidance Website</h3>
+
+                    <p>
+                        A website designed to help students explore
+                        career opportunities and make informed
+                        career decisions.
+                    </p>
+
+                    <span>HTML | CSS</span>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <h3>Academia-Industry Collaboration Portal</h3>
+
+                    <p>
+                        A platform connecting students, academicians
+                        and industries through skill mapping,
+                        internships and placement opportunities.
+                    </p>
+
+                    <span>React | JavaScript</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+
+            <p class="section-label">LET'S CONNECT</p>
+
+            <h2>Contact Me</h2>
+
+            <p>Have a question or opportunity? Send me a message.</p>
+
+            <form id="contactForm">
+
+                <div class="form-group">
+
+                    <label for="name">Your Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">Your Email</label>
+
+                    <input
+                        type="text"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <small id="emailError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">Your Message</label>
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Write your message"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit" class="primary-btn">
+                    Send Message
+                </button>
+
+                <p id="formStatus"></p>
+
+            </form>
+
+        </section>
+
+
+        <!-- Admin Section -->
+        <section id="admin" class="section">
+
+            <p class="section-label">WEBSITE MANAGEMENT</p>
+
+            <h2>Admin Panel</h2>
+
+            <div id="loginContainer">
+
+                <h3>Admin Login</h3>
+
+                <form id="adminLoginForm">
+
+                    <input
+                        type="text"
+                        id="adminUsername"
+                        placeholder="Username"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        id="adminPassword"
+                        placeholder="Password"
+                        required
+                    >
+
+                    <button type="submit" class="primary-btn">
+                        Login
+                    </button>
+
+                    <p id="loginError"></p>
+
+                </form>
+
+            </div>
+
+
+            <div id="responseContainer" class="hidden">
+
+                <h3>Contact Form Responses</h3>
+
+                <button id="logoutBtn" class="secondary-btn">
+                    Logout
+                </button>
+
+                <div id="responsesList"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Jishitha. All Rights Reserved.</p>
+
+        <p>Designed with HTML, CSS & JavaScript.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
